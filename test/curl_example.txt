@@ -1,0 +1,9 @@
+curl --location 'http://localhost:5000/api/v1/calculate' \
+--header 'Content-Type: application/json' \
+--data '{
+    "initial_capital": 1000.0,
+    "interest_rate": 6.0,
+    "time_unit": "PY",
+    "time": 1,
+    "investment_frequency": "unique"
+}'
